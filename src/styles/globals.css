@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+/* Design Tokens - VOID Luxury Fintech */
+:root {
+  /* Colors - Luxury Palette */
+  --color-navy: #0D1B2A;
+  --color-charcoal: #1C2530;
+  --color-gold: #C7A96B;
+  --color-soft-white: #F5F6F8;
+  --color-muted-text: #88909B;
+  --color-success: #2E8B57;
+  --color-loss: #C44536;
+
+  /* Typography - Luxury */
+  --font-heading: "Playfair Display", Georgia, serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+  
+  --fs-56: 56px;
+  --fs-48: 48px;
+  --fs-32: 32px;
+  --fs-24: 24px;
+  --fs-18: 18px;
+  --fs-16: 16px;
+  --fs-14: 14px;
+  --fs-12: 12px;
+  
+  --lh-1-2: 1.2;
+  --lh-1-5: 1.5;
+  --lh-1-6: 1.6;
+
+  /* Spacing Scale */
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-80: 80px;
+
+  /* Layout */
+  --container-max: 1200px;
+  --gutter: 24px;
+}
+
+@layer base {
+  @font-face {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/playfairdisplay/v30/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvUDQZNLo_U2r.woff2) format("woff2");
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2) format("woff2");
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    font-family: var(--font-body);
+    font-size: var(--fs-16);
+    line-height: var(--lh-1-6);
+    color: var(--color-navy);
+    background-color: var(--color-soft-white);
+  }
+
+  h1 {
+    font-family: var(--font-heading);
+    font-size: var(--fs-56);
+    line-height: var(--lh-1-2);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    font-family: var(--font-heading);
+    font-size: var(--fs-48);
+    line-height: var(--lh-1-2);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    font-family: var(--font-heading);
+    font-size: var(--fs-24);
+    line-height: var(--lh-1-2);
+    font-weight: 600;
+  }
+
+  p {
+    font-family: var(--font-body);
+    font-size: var(--fs-16);
+    line-height: var(--lh-1-6);
+  }
+
+  small {
+    font-size: var(--fs-14);
+    color: var(--color-muted-text);
+  }
+}
+
+@layer components {
+  .container-custom {
+    max-width: var(--container-max);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
