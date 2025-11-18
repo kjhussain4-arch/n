@@ -35,7 +35,7 @@ export default function App() {
       <JoinModal open={joinModalOpen} onOpenChange={setJoinModalOpen} />
 
       {/* Premium Hero Section */}
-      <section className="pt-40 pb-32 bg-gradient-to-b from-white to-[#F5F6F8]">
+        <section className="pt-40 pb-32 bg-gradient-to-b from-white to-[#F5F6F8]" style={{ scrollMarginTop: '80px' }}>
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <motion.div
@@ -98,7 +98,7 @@ export default function App() {
       </section>
 
       {/* What VOID Does Section */}
-      <section className="py-24 bg-[#F5F6F8]">
+      <section className="py-24 bg-[#F5F6F8]" style={{ scrollMarginTop: '80px' }}>
         <div className="container-custom">
           <motion.div variants={fadeInUpVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-16">
             <h2 className="mb-6 text-[#0D1B2A]">What VOID Delivers</h2>
@@ -152,7 +152,7 @@ export default function App() {
       </section>
 
       {/* Real Signal Examples Section */}
-      <section className="py-24 bg-white" id="signals">
+      <section className="py-24 bg-white" id="signals" style={{ scrollMarginTop: '80px' }}>
         <div className="container-custom">
           
           {/* Heading */}
@@ -285,7 +285,7 @@ export default function App() {
       </section>
 
       {/* Tester Program Section */}
-      <section className="py-24 bg-white" id="program">
+      <section className="py-24 bg-white" id="program" style={{ scrollMarginTop: '80px' }}>
         <div className="container-custom">
           <motion.div variants={fadeInUpVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center mb-16">
             <h2 className="mb-6 text-[#0D1B2A]">The VOID Tester Program</h2>
@@ -418,7 +418,7 @@ export default function App() {
       </section>
 
       {/* About Team Section */}
-      <section className="py-24 bg-[#F5F6F8]" id="about">
+      <section className="py-24 bg-[#F5F6F8]" id="about" style={{ scrollMarginTop: '80px' }}>
         <div className="container-custom">
           <motion.div variants={fadeInUpVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="max-w-3xl mx-auto text-center">
             <h2 className="mb-8 text-[#0D1B2A]">About the Team</h2>
