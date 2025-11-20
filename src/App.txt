@@ -358,10 +358,11 @@ export default function App() {
                     <div className="flex items-center gap-2 mb-2">
                       <div className="w-2 h-2 rounded-full bg-[#2E8B57]" />
                       <span className="text-[#C7A96B]" style={{ fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                        Signal
+                        Live Signal
                       </span>
                     </div>
                     <h3 className="text-white mb-1">BTC/USDT</h3>
+                    <p className="text-[#88909B]" style={{ fontSize: '13px' }}>Sent 2 minutes ago</p>
                   </div>
 
                   <div className="space-y-4 bg-[#1C2530] rounded-sm p-6">
@@ -369,19 +370,19 @@ export default function App() {
                       <span className="text-[#88909B]" style={{ fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                         Direction
                       </span>
-                      <span className="text-[#2E8B57]" style={{ fontSize: '15px', fontWeight: 600 }}>SHORT</span> 
+                      <span className="text-[#2E8B57]" style={{ fontSize: '15px', fontWeight: 600 }}>LONG</span>
                     </div>
                     <div className="flex justify-between items-center pb-4 border-b border-[#C7A96B]/10">
                       <span className="text-[#88909B]" style={{ fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                         Entry Zone
                       </span>
-                      <span className="text-white" style={{ fontSize: '15px', fontWeight: 500 }}>$104854.95 - $105050.28</span>
+                      <span className="text-white" style={{ fontSize: '15px', fontWeight: 500 }}>$42,150 - $42,300</span>
                     </div>
                     <div className="flex justify-between items-center pb-4 border-b border-[#C7A96B]/10">
                       <span className="text-[#88909B]" style={{ fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                         Stop Loss
                       </span>
-                      <span className="text-[#C44536]" style={{ fontSize: '15px', fontWeight: 500 }}>$105729.3424</span>
+                      <span className="text-[#C44536]" style={{ fontSize: '15px', fontWeight: 500 }}>$41,500</span>
                     </div>
                     <div>
                       <span className="text-[#88909B] mb-3 block" style={{ fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
@@ -390,15 +391,15 @@ export default function App() {
                       <div className="space-y-2 pl-4">
                         <div className="flex justify-between items-center">
                           <span className="text-[#C7A96B]" style={{ fontSize: '14px' }}>T1 (30%)</span>
-                          <span className="text-white" style={{ fontSize: '14px' }}>$102981.0774</span>
+                          <span className="text-white" style={{ fontSize: '14px' }}>$42,900</span>
                         </div>
                         <div className="flex justify-between items-center">
                           <span className="text-[#C7A96B]" style={{ fontSize: '14px' }}>T2 (40%)</span>
-                          <span className="text-white" style={{ fontSize: '14px' }}>$101589.5049</span>
+                          <span className="text-white" style={{ fontSize: '14px' }}>$43,400</span>
                         </div>
                         <div className="flex justify-between items-center">
                           <span className="text-[#C7A96B]" style={{ fontSize: '14px' }}>T3 (30%)</span>
-                          <span className="text-white" style={{ fontSize: '14px' }}>$99502.1463</span>
+                          <span className="text-white" style={{ fontSize: '14px' }}>$44,200</span>
                         </div>
                       </div>
                     </div>
